@@ -39,6 +39,7 @@ Deshalb musste ich die Welt auf der uralten Minecraft 1.8.1 vorab generieren. Un
 
 Das ist aber nicht das Ende der Welt! Im wahrsten Sinne des Wortes. Sondern ab der 2000/4000-Block-Grenze übernimmt der Weltgenerator deiner aktuellen Minecraft-Version. Sobald du den Bereich betrittst. Das kann jedoch zu ziemlich kuriosen Ergebnissen führen, wenn der neue Weltgenerator an der Stelle eine ganz andere Welt vorgesehen hat, als der alte. Trotzdem kannst du einfach über die Grenze hinaus wandern und die neue Welt erkunden.
 
+Na, wo verläuft hier wohl die 2000-Block-Grenze? (Screenshot)  
 ![](/grenze.png)
 
 > Willst du wirklich eine noch größere Welt? Ich habe die nötigen Schritte [hier](./welt-generieren.md) aufgeschrieben. Aber überleg dir das gut. Du brauchst Ausrüstung, Wissen und Zeit. Größer ist nicht immer besser. 
@@ -46,6 +47,14 @@ Das ist aber nicht das Ende der Welt! Im wahrsten Sinne des Wortes. Sondern ab d
 # Wo finde ich die Minecraft-Welt zum Herunterladen?
 
 Hier: https://github.com/florian-utzt/dasdorf-seed-world/releases
+
+# Wie bekomme ich die Welt in mein Minecraft? 
+
+* Für Java Edition unter Windows: Kopiere den "world" Ordner nach: `%appdata%\.minecraft\saves`. Also so, dass es dann einen Ordner `%appdata%\.minecraft\saves\world` gibt. 
+* Für Bedrock Edition unter Windows: Gehe auf Spielen -> Neue Welt -> Importieren. Und wähle dann die heruntergeladene .mcworld-Datei aus. 
+
+Transfer auf Konsole: Hier kenne ich nur einen umständlichen Weg für Nintendo Switch, beschrieben [hier](https://github.com/florian-utzt/dasdorf-seed-world/blob/main/welt-generieren.md#bonus-quest-2-transfer-auf-die-nintendo-switch).   
+Der dort beschriebene Weg über Minecraft Realms funktioniert sicher auch für andere Konsolen - aber vielleicht gibt es dort auch noch einfachere Wege, eine Datei zu übertragen. 
 
 
 
