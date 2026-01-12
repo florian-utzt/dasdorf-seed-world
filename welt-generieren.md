@@ -57,7 +57,7 @@ Das kann nun eine Weile dauern. Man bekommt eine Fortschrittsanzeige. Am Ende so
 ## Optional: Welt überprüfen mit mcview
 Jetzt ist ein guter Zeitpunkt, einmal zu prüfen, ob die Generierung geklappt hat. Wie gesagt, allein die Ordnergröße muss signifikant gestiegen sein. 
 
-* Kopiere den Ordner "world" in `%appdata%\Roaming\.minecraft\saves` . 
+* Kopiere den Ordner "world" in `%appdata%\.minecraft\saves` . 
 * Besorge dir die Software MCView: https://github.com/kbinani/mcview 
 
 Du solltest deine Welt nun in mcview öffnen können. 
