@@ -6,7 +6,7 @@ Allgemeine Informationen siehe hier: [README.md](./README.md)
 Nachfolgend findest du mein dokumentiertes Vorgehen, um dir deine eigene Welt, ggf. mit anderer Größe, zu erzeugen. 
 Karl Olsberg beschreibt in seinen Büchern, dass er den Seed "100200300400500" in der Minecraft-Version 1.8.1 (von 2014!) verwendet hat, um die in seinen Büchern beschrieben Welt zu erzeugen. 
 Bis man diese Welt in einer modernen Minecraft-Installation nutzen kann, braucht es einige Upgrade- und Konvertierungsschritte.  
-Du brauchst einen Windows-PC, ein paar GB Speicherplatz und ein paar Stunden Zeit. Zudem durchaus etwas fortgeschrittenes PC-Wissen rund um Installationen, Dateien und Kommandozeile. Manche der untenstehenden Schritte sind ggf. schon wieder veraltet, wenn du diese Anleitung nutzt, und müssen improvisiert werden. Viel Erfolg!
+Du brauchst einen Windows-PC, ein paar GB Speicherplatz und ein paar Stunden Zeit. Zudem durchaus etwas fortgeschrittenes PC-Wissen rund um Installationen, Dateien und Kommandozeile. Ich habe mir zudem von Google Gemini helfen lassen. Manche der untenstehenden Schritte sind ggf. schon wieder veraltet, wenn du diese Anleitung nutzt, und müssen improvisiert werden. Viel Erfolg!
 
 
 ## Welt auf Minecraft/Spigot 1.8.1 anlegen
@@ -89,7 +89,7 @@ Also müssen wir diese Chunks vervollständigen.
 * Besorge dir das Programm MCA Selector: https://github.com/Querz/mcaselector
 * Öffne deinen Weltordner (File -> Open World)
 * Tools -> Filter Chunks
-  * Wähle "Circle" und gib an: `0;0;2000`. Siehe Screenshot unten. 
+  * Wähle "Timestamp", das Ungleich-Zeichen, und als Wert: 0., um alle Chunks innerhalb deines Kreises auszuwählen. Siehe Screenshot unten. 
 * Tools -> Change Fields
   * Status: `minecraft:full`
   * InhabitedTime: `1200`  (entspricht etwa 5 Minuten Spielzeit)
