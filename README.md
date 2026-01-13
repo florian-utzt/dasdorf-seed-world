@@ -26,10 +26,11 @@ Faustregel: Auf Konsolen wie Playstation, Nintendo Switch, Xbox, ist es sowieso 
 
 Zur Größe: In den meisten Fällen sollte 2000 Blöcke ausreichen (Download etwa 250 MB). Wähle 4000, wenn du wirklich intensiv mit der Welt spielen möchtest. 
 
-# Was sollte ich wissen? 
+# Welche Einschränkungen gibt es? 
 * Da du eine alte Minecraft-Welt spielst, sind darin neuere Inhalte nicht enthalten. Natürlich ist das Dorf am Rand der Schlucht enthalten, ebenso das Wüstendorf, der Tempel und die beschriebenen Gebirge. Du findest neuere Inhalte wie z.B. Wachtürme jenseits der 2000/4000-Block-Grenze (siehe unten). 
 * Inhalte, die rein für das Buch hinzugedacht wurden, kann Minecraft nicht erzeugen, z.B. die Hütte im Wald. Bau sie selbst!
 * Lebewesen haben die vielen Konvertierungsschritte eventuell nicht überlebt. Benutze die Spawn-Eier!
+* Nether und Ende habe ich nicht mit dem ursprünglichen Weltgenerator vor-generiert, da ich nicht wusste, ob dies relevant ist. 
 
 **Warum hat die Welt eine feste Größe?**
 Unser Ausgangsproblem ist, dass wir auf den Weltgenerator der Java Edition 1.8.1 angewiesen sind. Minecraft funktioniert so, dass neue Teile der Welt (Chunks) erst generiert werden, wenn ein Spieler diese erstmalig betritt - und zwar nach den dann aktuell geltenden Weltgenerator-Regeln. Diese sind in höheren Versionen anders als in 1.8.1.  
