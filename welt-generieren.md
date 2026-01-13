@@ -65,6 +65,22 @@ Du solltest deine Welt nun in mcview öffnen können.
 ![](/dasdorf-2000.png)
 
 
+## Welt schrittweise auf die aktuelle Version von Minecraft Java Edition aktualisieren
+Gemini empfiehlt nun, die Welt 1x in Minecraft 1.12.2 zu laden und dann erst in der aktuellsten Version (bei mir 1.21.11). 
+
+Ich nutze dafür ab jetzt den offiziellen Minecraft-Server. Beim Vorgehen kannst du dich an der Beschreibung des Spigot-Servers (oben) orientieren mit folgenden Anpassungen: 
+* Die JAR-Dateien für den Server bekommst du vom Minecraft-Wiki und musst sie nicht selbst bauen: 
+  * https://minecraft.wiki/w/Java_Edition_1.12.2 -> Box rechts -> Downloads
+  * https://minecraft.wiki/w/Java_Edition_1.21.11 -> Box rechts -> Downloads
+* Leicht verändertes Ordnerformat: Im Minecraft-Server heißt der Ordner für die Oberwelt ebenfalls "world", die Ordner für Nether und Ende sind DIM1 und DIM-1
+* Starte den Minecraft-Server mit den Parametern --forceUpgrade und --eraseCache, damit wirklich alle Blöcke/Chunks beim Upgrade auf die neue Version erwischt werden. 
+  * Also: `<Pfad deiner Java-Installation>\bin\java.exe -Xmx2G -Xms2G -jar server.jar nogui --forceUpgrade --eraseCache`
+  * Achtung: Für die 1.21er Installation brauchst du ein neueres Java als für die 1.12er und 1.8.1er. 
+
+Vergiss nicht, jeweils vor dem Serverstart deinen aktuellen "world" Ordner in das Serververzeichnis hineinzukopieren! 
+In Version 1.12.2 scheint forceUpgrade noch nichts zu bewirken. Bei 1.21.11 dauert der erste Start mit forceUpgrade wesentlich länger. 
+
+
 ## Wichtiger Zwischenschritt: Die Chunks als "fertig" markieren mit MCA Selector
 WorldBorder hat uns alle nötigen Chunks schon mal generiert, doch leider unterscheiden sie sich in einigen relevanten Punkten von einem "echten" Chunk, der durch die Anwesenheit eines Spielers generiert wurde. 
 Minecraft speichert für jeden Chunk einen Status und außerdem, wie lange sich schon ein Spieler darin aufgehalten hat. Beide Attribute werden von nachgelagerten Tools abgefragt, um unnütze Teile der Welt zu erkennen und somit deren Arbeit zu beschleunigen -> schlecht für uns!
@@ -83,20 +99,6 @@ Also müssen wir diese Chunks vervollständigen.
 
 Die Welt wird nach Klick auf OK sofort gespeichert, du kannst das Programm einfach schließen. 
 
-
-## Welt schrittweise auf die aktuelle Version von Minecraft Java Edition aktualisieren
-Gemini empfiehlt nun, die Welt 1x in Minecraft 1.12.2 zu laden und dann erst in der aktuellsten Version (bei mir 1.21.11). 
-
-Beim Vorgehen kannst du dich an der Beschreibung des Spigot-Servers orientieren mit folgenden Anpassungen: 
-* Die JAR-Dateien bekommst du vom Minecraft-Wiki und musst sie nicht selbst bauen: 
-  * https://minecraft.wiki/w/Java_Edition_1.12.2 -> Box rechts -> Downloads
-  * https://minecraft.wiki/w/Java_Edition_1.21.11 -> Box rechts -> Downloads
-* Leicht verändertes Ordnerformat: Im Minecraft-Server heißt der Ordner für die Oberwelt ebenfalls "world", die Ordner für Nether und Ende sind DIM1 und DIM-1
-* Starte den Minecraft-Server mit den Parametern --forceUpgrade und --eraseCache, damit wirklich alle Blöcke/Chunks beim Upgrade auf die neue Version erwischt werden. 
-  * Also: `<Pfad deiner Java-Installation>\bin\java.exe -Xmx2G -Xms2G -jar server.jar nogui --forceUpgrade --eraseCache`
-  * Achtung: Für die 1.21er Installation brauchst du ein neueres Java als für die 1.12er und 1.8.1er. 
-
-Vergiss nicht, jeweils vor dem Serverstart deinen aktuellen "world" Ordner in das Serververzeichnis hineinzukopieren! 
 
 ## Fertig - für die Java Edition
 Falls du die aktuelle Java-Edition auf PC benutzt, bist du hier fertig! Du kannst den "world" Ordner wieder nach `%appdata%\Roaming\.minecraft\saves` kopieren und kannst ihn in deiner Minecraft-Installation benutzen. 
